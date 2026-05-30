@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="career.css">
+
+  <style>
+    section {
+      padding: 120px 8%;
+    }
+
+    @media(max-width:768px) {
+      section {
+        padding-top: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+
+  <nav>
+
+    <div class="logo">
+      S.R.B<span>WELDING WORLD</span>
+    </div>
+
+    <ul id="menu">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/products.html">Products</a></li>
+      <li><a href="/why.html">Why Us</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+      <li><a href="/career.html">Career</a></li>
+    </ul>
+
+    <div class="menu-btn" id="menuBtn">
+      ☰
+    </div>
+
+  </nav>
+
+  <!-- WHY US -->
+
+  <section id="why">
+
+    <div class="title">
+      <h2>Why Choose Us</h2>
+      <p>Modern manufacturing with trusted quality.</p>
+    </div>
+
+    <div class="features">
+
+      <div class="feature">
+
+        <h3>Premium Quality</h3>
+
+        <p>
+          International manufacturing standards with durable materials.
+        </p>
+
+      </div>
+
+      <div class="feature">
+
+        <h3>Fast Delivery</h3>
+
+        <p>
+          Efficient production and logistics for timely delivery.
+        </p>
+
+      </div>
+
+      <div class="feature">
+
+        <h3>Modern Technology</h3>
+
+        <p>
+          Advanced industrial machinery and latest production systems.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- FOOTER -->
+
+  <footer class="footer">
+
+    <div class="footer-container">
+
+      <!-- COMPANY INFO -->
+
+      <div class="footer-box">
+
+        <h2 class="footer-logo">
+          S.R.B <span>WELDING WORLD</span>
+        </h2>
+
+        <p>
+          Premium Iron, Steel & Aluminium manufacturing company delivering
+          industrial-grade quality products for construction, engineering
+          and fabrication industries.
+        </p>
+
+        <div class="social-icons">
+
+          <a href="#">🌐</a>
+          <a href="#">📘</a>
+          <a href="#">📸</a>
+          <a href="#">▶</a>
+
+        </div>
+
+      </div>
+
+      <!-- QUICK LINKS -->
+
+      <div class="footer-box">
+
+        <h3>Quick Links</h3>
+
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/products.html">Products</a>
+        <a href="/why.html">Why Us</a>
+        <a href="/career.html">Career</a>
+        <a href="/contact.html">Contact</a>
+
+      </div>
+
+      <!-- PRODUCTS -->
+
+      <div class="footer-box">
+
+        <h3>Our Products</h3>
+
+        <a href="/iron.html">Iron Products</a>
+        <a href="/steel.html">Steel Products</a>
+        <a href="/aluminium.html">Aluminium Products</a>
+        <a href="#">Industrial Welding</a>
+
+      </div>
+
+      <!-- CONTACT INFO -->
+
+      <div class="footer-box">
+
+        <h3>Contact Info</h3>
+
+        <p>📞 +91 9876543210</p>
+
+        <p>📧 srbweldingworld@gmail.com</p>
+
+        <p>📍 Bangalore, Karnataka, India</p>
+
+        <a href="https://wa.me/8292048986" class="whatsapp-btn">
+          💬 Chat on WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+
+      <p>
+        © 2026 S.R.B Welding World | All Rights Reserved
+      </p>
+
+    </div>
+
+  </footer>
+
+  <script>
+
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("menu");
+
+menuBtn.addEventListener("click", () => {
+
+  menu.classList.toggle("active");
+
+  menuBtn.innerHTML =
+    menu.classList.contains("active")
+      ? "✕"
+      : "☰";
+});
+
+document.querySelectorAll("#menu a").forEach(link => {
+
+  link.addEventListener("click", () => {
+
+    menu.classList.remove("active");
+    menuBtn.innerHTML = "☰";
+
+  });
+
+});
+
+</script>
+</body>
+
+</html>
