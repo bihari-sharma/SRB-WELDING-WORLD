@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="career.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+     body{
+    background:
+        linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+        url("/image/background1.png");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    color:white;
+    }
+    section {
+      padding: 120px 8%;
+    }
+
+    @media(max-width:768px) {
+      section {
+        padding-top: 200px;
+      }
+    }
+
+    @media(min-width:768px) and (max-width:1107px) {
+      section {
+        padding-top: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+
+  <nav>
+
+    <div class="logo">
+      <a href="/index.html">S.R.B<span>WELDING WORLD</span></a>
+    </div>
+
+    <ul id="menu">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/products.html">Products</a></li>
+      <li><a href="/why.html">Why Us</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+      <li><a href="/career.html">Career</a></li>
+      <li><a href="https://maps.app.goo.gl/dnxuj6spMLzKmZYr6"><i class="fa-solid fa-location-dot"></i></a></li>
+    </ul>
+
+    <div class="menu-btn" id="menuBtn">
+      ☰
+    </div>
+
+  </nav>
+
+  <!-- WHY US -->
+
+  <section id="why">
+
+    <div class="title">
+      <h2>Why Choose Us</h2>
+      <p>Modern manufacturing with trusted quality.</p>
+    </div>
+
+    <div class="features">
+
+      <div class="feature">
+
+        <h3>Premium Quality</h3>
+
+        <p>
+          International manufacturing standards with durable materials.
+        </p>
+
+      </div>
+
+      <div class="feature">
+
+        <h3>Fast Delivery</h3>
+
+        <p>
+          Efficient production and logistics for timely delivery.
+        </p>
+
+      </div>
+
+      <div class="feature">
+
+        <h3>Modern Technology</h3>
+
+        <p>
+          Advanced industrial machinery and latest production systems.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- FOOTER -->
+
+  <footer class="footer">
+
+    <div class="footer-container">
+
+      <!-- COMPANY INFO -->
+
+      <div class="footer-box">
+
+        <h2 class="footer-logo">
+          <a href="/index.html">S.R.B<span>WELDING WORLD</span></a>
+        </h2>
+
+        <p>
+          Premium Iron, Steel & Aluminium manufacturing company delivering
+          industrial-grade quality products for construction, engineering
+          and fabrication industries.
+        </p>
+
+        <div class="social-icons">
+
+          <a href="https://www.instagram.com/" target="_blank" class="instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="https://www.facebook.com/" target="_blank" class="facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- QUICK LINKS -->
+
+      <div class="footer-box">
+
+        <h3>Quick Links</h3>
+
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/products.html">Products</a>
+        <a href="/why.html">Why Us</a>
+        <a href="/career.html">Career</a>
+        <a href="/contact.html">Contact</a>
+        <a href="https://maps.app.goo.gl/dnxuj6spMLzKmZYr6"><i class="fa-solid fa-location-dot"></i> Location</a>
+
+      </div>
+
+      <!-- PRODUCTS -->
+
+      <div class="footer-box">
+
+        <h3>Our Products</h3>
+
+        <a href="/iron.html">Iron Products</a>
+        <a href="/steel.html">Steel Products</a>
+        <a href="/aluminium.html">Aluminium Products</a>
+
+      </div>
+
+      <!-- CONTACT INFO -->
+
+      <div class="footer-box">
+
+        <h3>Contact Info</h3>
+
+        <p>📞 +91 7759071414</p>
+
+        <p>📧 srbweldingworld@gmail.com</p>
+
+        <p>📍 Darbhanga, Bihar, India</p>
+
+        <a href="https://wa.me/7759071414" class="whatsapp-btn">
+          💬 Chat on WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+
+      <p>
+        © 2026 S.R.B Welding World | All Rights Reserved
+      </p>
+
+    </div>
+
+  </footer>
+
+  <script>
+
+    const menuBtn = document.getElementById("menuBtn");
+    const menu = document.getElementById("menu");
+
+    menuBtn.addEventListener("click", () => {
+
+      menu.classList.toggle("active");
+
+      menuBtn.innerHTML =
+        menu.classList.contains("active")
+          ? "✕"
+          : "☰";
+    });
+
+    document.querySelectorAll("#menu a").forEach(link => {
+
+      link.addEventListener("click", () => {
+
+        menu.classList.remove("active");
+        menuBtn.innerHTML = "☰";
+
+      });
+
+    });
+
+  </script>
+</body>
+
+</html>
